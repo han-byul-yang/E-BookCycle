@@ -19,9 +19,15 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout =
     Component.getLayout ??
     (() => (
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <>
+        <Head>
+          <title>bookcycle home</title>
+          <meta name='description' content='중고책 사고 팔기 서비스' />
+        </Head>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </>
     ))
 
   return getLayout(<Component {...pageProps} />)
