@@ -19,7 +19,15 @@ const Home: NextPage = ({ bookListData }: any) => {
           const { id, url, name, author, price } = bookData
           return (
             <li key={`${id}`} className={styles.bookListBox}>
-              <Image className={styles.image} src={url[0]} alt={`${name}-img`} width='100' height='140' />
+              <Image
+                className={styles.image}
+                src={url[0]}
+                alt={`${name}-img`}
+                width='100'
+                height='140'
+                placeholder='blur'
+                blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mM8UQ8AAhUBSQV8WJQAAAAASUVORK5CYII='
+              />
               <p className={styles.name}>{name}</p>
               <p className={styles.author}>{author}</p>
               <p className={styles.price}>{price}</p>
