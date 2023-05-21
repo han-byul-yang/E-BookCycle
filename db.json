@@ -1,0 +1,31 @@
+{
+  "booksData": [
+    {
+      "name": "좋아하는 걸 좋아하는 게 취미",
+      "author": "김신지",
+      "url": ["https://image.yes24.com/goods/67327775/XL"],
+      "category": "에세이",
+      "price": "5000",
+      "description": "중간중간 밑줄이 쳐져 있으나 읽는 데 큰 영향을 미치지는 않고, 조금의 사용감이 있습니다.",
+      "isbn": 0
+    },
+    {
+      "name": "시간이 있었으면 좋겠다",
+      "author": "김신지",
+      "url": ["https://image.yes24.com/goods/116753050/XL"],
+      "category": "에세이",
+      "price": "5000",
+      "description": "중간중간 밑줄이 쳐져 있으나 읽는 데 큰 영향을 미치지는 않고, 조금의 사용감이 있습니다.",
+      "isbn": 0
+    },
+    {
+      "name": "평일도 인생이니까",
+      "author": "김신지",
+      "url": ["https://image.yes24.com/Goods/89859221/XL"],
+      "category": "에세이",
+      "price": "5000",
+      "description": "중간중간 밑줄이 쳐져 있으나 읽는 데 큰 영향을 미치지는 않고, 조금의 사용감이 있습니다.",
+      "isbn": 0
+    }
+  ]
+}
