@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
+import { SessionProvider } from 'next-auth/react'
 import Head from 'next/head'
 import { ReactElement, ReactNode } from 'react'
 
@@ -15,7 +16,7 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
 
-export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+export default function MyApp({ Component, pageProps: { session, ...pageProps } }: AppPropsWithLayout) {
   const getLayout =
     Component.getLayout ??
     (() => (
@@ -25,7 +26,9 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           <meta name='description' content='중고책 사고 팔기 서비스' />
         </Head>
         <Layout>
-          <Component {...pageProps} />
+          <SessionProvider session={session}>
+            <Component {...pageProps} />
+          </SessionProvider>
         </Layout>
       </>
     ))
